@@ -29,7 +29,7 @@ import Foundation
 class NewsService {
     
     let session = URLSession.shared
-    let topHeadlinesUrl: String = "https://newsapi.org/v2/top-headlines?country=us&apiKey=334b9917d117490ca6f4d73600c02f31"
+    let topHeadlinesUrl: String = "https://newsapi.org/v2/top-headlines?country=us&apiKey=YOUR_API_KEY"
     
     func getNews(completion: @escaping (NetworkResource<[Article]>) -> ()) {
         guard let url = URL(string: topHeadlinesUrl) else {
